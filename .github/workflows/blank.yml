@@ -22,8 +22,8 @@ jobs:
         run: echo "BRANCH=$(echo $GITHUB_REF | cut -d'/' -f 3)" >> $GITHUB_ENV
            
           if [ "${BRANCH}" = "staging" ]; then
-            echo ${env.STAGING_TEMPLATE_API}
+            echo "${env.STAGING_TEMPLATE_API}"
            
           elif [ "${BRANCH}" = "prod" ]; then
-            echo ${env.PRODUCTION_TEMPLATE_API}
+            echo "${env.PRODUCTION_TEMPLATE_API}"
   
