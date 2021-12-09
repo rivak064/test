@@ -17,11 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:   
       - name: Set env.BRANCH
-        run: 
+        run: echo STAGING_TEMPLATE_API
            
-          if [ "${BRANCH}" = "staging" ]; then
-            echo "${env.STAGING_TEMPLATE_API}"
-           
-          elif [ "${BRANCH}" = "prod" ]; then
-            echo "${env.PRODUCTION_TEMPLATE_API}"
+          
   
