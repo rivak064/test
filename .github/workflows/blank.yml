@@ -17,7 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:   
       - name: Set env.BRANCH
-        run: echo ${{env.STAGING_TEMPLATE_API}}
+        env: 
+          TEMPLATE_URL : env.STAGING_TEMPLATE_API
+        run: echo ${{env.TEMPLATE_URL}}
            
           
   
