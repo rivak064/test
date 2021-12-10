@@ -18,7 +18,7 @@ jobs:
     steps:   
       - name: Set env.BRANCH
         env: 
-          TEMPLATE_URL : env.STAGING_TEMPLATE_API
+          TEMPLATE_URL : ${{env.STAGING_TEMPLATE_API}}
         run: echo ${{env.TEMPLATE_URL}}
            
           
